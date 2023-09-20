@@ -146,7 +146,7 @@
 <script type="text/javascript">
 
 gHelpShown = false;
-gDefaultConfig = "new_orleans_example.json";
+gDefaultConfig = "default_example.json";
 
 var getTitleControl = function(location, imageryAttribution, license){
     var titleControl = L.control({ position: 'bottomleft' });
@@ -280,7 +280,7 @@ $(document).ready(function(){
     // Setup the map
     //////////////////////////////////////////////
     var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        minZoom: 8,
+        minZoom: 4,
         maxZoom: 21,
         maxNativeZoom: 17,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -289,7 +289,7 @@ $(document).ready(function(){
     var pre_imagery = L.tileLayer(config["preImageryLayer"]["basemapURL"], {
         tms: true,
         attribution: config["preImageryLayer"]["attribution"],
-        minZoom: 8,
+        minZoom: 4,
         maxZoom: 21,
         maxNativeZoom: 19,
         bounds: config["preImageryLayer"]["bounds"]
@@ -298,7 +298,7 @@ $(document).ready(function(){
     var post_imagery = L.tileLayer(config["postImageryLayer"]["basemapURL"], {
         tms: true,
         attribution: config["postImageryLayer"]["attribution"],
-        minZoom: 8,
+        minZoom: 4,
         maxZoom: 21,
         maxNativeZoom: 19,
         bounds: config["postImageryLayer"]["bounds"]
@@ -310,7 +310,7 @@ $(document).ready(function(){
         change = L.tileLayer(config["changeImageryLayer"]["basemapURL"], {
             tms: true,
             attribution: "",
-            minZoom: 8,
+            minZoom: 4,
             maxNativeZoom: 18,
             maxZoom: 21,
             bounds: config["changeImageryLayer"]["bounds"]
@@ -324,7 +324,7 @@ $(document).ready(function(){
     var gMap = L.map('map', {
         center: config["center"],
         zoom: config["initialZoom"],
-        minZoom: 8,
+        minZoom: 4,
         maxZoom: 21,
         zoomControl: false,
         keyboard: true,
