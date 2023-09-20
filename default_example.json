@@ -43,10 +43,10 @@
     ]
   },
   "center": [
-    -9.9839386,
-    29.4361069
+    29.4361069,
+    -9.9839386
   ],
-  "initialZoom": 14,
+  "initialZoom": 8,
   "location": "Redmond, Washington",
   "imageryAttribution": "<a href='https://planetarycomputer.microsoft.com/dataset/naip'>NAIP Imagery</a>",
   "license": "Proprietary"
