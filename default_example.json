@@ -1,6 +1,6 @@
 {
   "preImageryLayer": {
-    "basemapURL": "http://localhost:8081/data/before_tiles/{z}/{x}/{y}.png",
+    "basemapURL": "http://localhost:8080/data/before_tiles/{z}/{x}/{y}.png",
     "date": "Pre disaster imagery",
     "attribution": "",
     "bounds": [
@@ -15,7 +15,7 @@
     ]
   },
   "postImageryLayer": {
-    "basemapURL": "http://localhost:8081/data/after_tiles/{z}/{x}/{y}.png",
+    "basemapURL": "http://localhost:8080/data/after_tiles/{z}/{x}/{y}.png",
     "date": "Post disaster imagery",
     "attribution": "",
     "bounds": [
@@ -30,7 +30,7 @@
     ]
   },
   "changeImageryLayer": {
-    "basemapURL": "http://localhost:8081/data/damage_tiles/{z}/{x}/{y}.png",
+    "basemapURL": "http://localhost:8080/data/damage_tiles/{z}/{x}/{y}.png",
     "bounds": [
       [
         47.62170620047876,
